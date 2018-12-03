@@ -213,6 +213,11 @@
 		default:
 			echo "page not recognized";
 			break;
-	}
+	}	
+
+	echo "<br>";
+
+	//inline turnary
+	echo $page == "shopping" ? "we're going shoping" : "we're not going shopping";
 
 ?>
