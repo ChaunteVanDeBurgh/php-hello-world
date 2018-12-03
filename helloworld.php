@@ -229,4 +229,11 @@
 		echo "$count times 12 is " . 12 * $count . "." . "<br>";
 	}
 
+	//do while loop
+	$ii = 1;
+
+	do {
+		echo "$ii times 10 is " . $ii * 10 . "." . "<br>";
+	} while (++$ii <= 10);
+
 ?>
