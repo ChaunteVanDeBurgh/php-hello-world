@@ -111,4 +111,10 @@
 	echo "<br>";
 	echo __NAMESPACE__;
 	echo "<br>";
+
+	//print turnary
+	$b = True;
+	$b ? print "TRUE" : print "FALSE";
+	echo "<br>";
+	
 ?>
