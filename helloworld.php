@@ -170,4 +170,17 @@
 	if ($q == $u) echo "$q is equivilant to $u";
 	echo "<br>";
 
+	//if else statement
+	$i = 4;
+
+	if ($i == 3) {
+		echo "i is equal to 3"; 
+		echo "<br>";
+	} else {
+		echo "i is not equla to 3";
+		echo 'it\'s probably 4';
+		echo "<br>";
+	}
+
+
 ?>
