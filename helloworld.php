@@ -218,6 +218,15 @@
 	echo "<br>";
 
 	//inline turnary
-	echo $page == "shopping" ? "we're going shoping" : "we're not going shopping";
+	echo $page == "shopping" ? "we're going shopping" : "we're not going shopping";
+ 
+ echo "<br>";
+
+	//while loop
+	$count = 0;
+
+	while (++$count <= 12) {
+		echo "$count times 12 is " . 12 * $count . "." . "<br>";
+	}
 
 ?>
