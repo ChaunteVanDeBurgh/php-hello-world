@@ -143,5 +143,13 @@
 	echo "B: [" . false . "] <br>";
 	echo "<br>";
 	echo "20 > 7 " . (20 > 7) . " <br>";
+	echo "<br>";
+
+	//if statement
+	$month = "dec";
+
+	if ($month == "dec") {
+		echo "Christmas time is coming, this month";
+	}
 
 ?>
