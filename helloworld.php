@@ -61,4 +61,8 @@
 	echo $num;
 	echo "<br>";
 
+	//conditionals
+	if ($num++ == 3) echo "True_3";
+	if (++$num == 4) echo "True_4";
+
 ?>
