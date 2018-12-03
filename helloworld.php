@@ -236,4 +236,10 @@
 		echo "$ii times 10 is " . $ii * 10 . "." . "<br>";
 	} while (++$ii <= 10);
 
+	//for loop
+	for ($g = 1; $g < 11; $g++) {
+		echo "$g time 9 is " . $g * 9 . ".";
+		echo "<br>";
+	}
+
 ?>
