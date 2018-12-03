@@ -194,4 +194,25 @@
 		echo "<br>";
 	}
 
+	//switch statement
+	$page = "shopping";
+
+	switch ($page) {
+		case "home":
+			echo "you're at home";
+			break;
+		case "about":
+			echo "the about page";
+			break;
+		case "faq":
+			echo "frequently asked questions";
+			break;
+		case "contact":
+			echo "contact us";
+			break;
+		default:
+			echo "page not recognized";
+			break;
+	}
+
 ?>
