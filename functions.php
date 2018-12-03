@@ -11,4 +11,16 @@
 	echo strtoupper("hello, world!");
 	echo "<br>";
 
+	//first function
+	function format_name($first, $middle, $last)
+	{
+		$first = ucfirst(strtolower($first));
+		$middle = ucfirst(strtolower($middle));
+		$last = ucfirst(strtolower($last));
+
+		return $first . " " . $middle . " " . $last;
+	}
+
+	echo format_name('walter', 'ChaUnte', 'vandeburgh');
+
 ?>
