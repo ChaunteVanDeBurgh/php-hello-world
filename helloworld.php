@@ -116,5 +116,15 @@
 	$b = True;
 	$b ? print "TRUE" : print "FALSE";
 	echo "<br>";
-	
+
+	//function
+
+	function helloworld($num)
+	{
+		return "hello " . $num . " worlds";
+	}
+
+	echo helloworld(4);
+	echo "<br>";
+
 ?>
