@@ -242,4 +242,11 @@
 		echo "<br>";
 	}
 
+	//explicit casting
+
+	$casting = (int)(4 / 3);
+
+	echo $casting;
+	echo "<br>";
+
 ?>
