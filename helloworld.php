@@ -72,6 +72,19 @@
 
 	//string interpolation
 	echo 'You have $msgs new messages';
+	echo "<br>";
 	echo "You have $msgs new messages";
+	echo "<br>";
+
+	//escape charecters
+	echo 'you\'re allright';
+	echo "<br>";
+	echo "She wrote \"return to sender\" on it.";
+	echo "<br>";
+	//ones that only work in double quotes
+	echo "\tHello\n\tWorld";
+	echo "<br>";
+	echo "\tHello\r\tWorld";
+	echo "<br>";
 
 ?>
