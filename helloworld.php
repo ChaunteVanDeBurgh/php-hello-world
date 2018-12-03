@@ -87,4 +87,9 @@
 	echo "\tHello\r\tWorld";
 	echo "<br>";
 
+	//sub string method
+	$my_string = "come said my soul";
+	echo substr($my_string, 5, 4);
+	echo "<br>";
+
 ?>
