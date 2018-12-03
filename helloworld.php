@@ -31,12 +31,12 @@
 	echo $exponent;
 	echo "<br>";
 
-	// assignment operatos 
+	// assignment operator 
 	$i = 5;
 	$i += 4;
 	$i -= 2;
 
-  //concot
+  //concot assignment operator 
 	$ao = 10;
 	$ao .= 4; 
 
@@ -63,6 +63,11 @@
 
 	//conditionals
 	if ($num++ == 3) echo "True_3";
-	if (++$num == 4) echo "True_4";
+	echo "<br>";
+
+	//string concatenation
+	$msgs = 5;
+	echo "You have " . $msgs . " new messages.";
+	echo "<br>";
 
 ?>
