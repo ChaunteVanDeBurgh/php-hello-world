@@ -24,4 +24,25 @@
 				 			 array('x', 'o',' '));
 
 	echo $oxo[1][2];
+	echo "<br>";
+
+	// Aritihmatic
+	$exponent = 5 ** 3;
+	echo $exponent;
+	echo "<br>";
+
+	// incremental operator
+	$i = 5;
+	$i += 4;
+	$i -= 2;
+
+	$ao = 10;
+	$ao .= 4; 
+
+	echo "<br>";
+	echo $ao;
+	echo "<br>";
+	echo $i;
+	echo "<br>";
+
 ?>
