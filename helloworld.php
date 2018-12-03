@@ -137,4 +137,11 @@
 	echo $exp;
 	echo "<br>";
 
+	//Boolean expressions
+
+	echo "A: [" . true . "] <br>";
+	echo "B: [" . false . "] <br>";
+	echo "<br>";
+	echo "20 > 7 " . (20 > 7) . " <br>";
+
 ?>
