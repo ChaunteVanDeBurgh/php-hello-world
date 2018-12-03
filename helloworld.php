@@ -31,11 +31,12 @@
 	echo $exponent;
 	echo "<br>";
 
-	// incremental operator
+	// assignment operatos 
 	$i = 5;
 	$i += 4;
 	$i -= 2;
 
+  //concot
 	$ao = 10;
 	$ao .= 4; 
 
@@ -43,6 +44,21 @@
 	echo $ao;
 	echo "<br>";
 	echo $i;
+	echo "<br>";
+
+	//logic
+	$_xor = 3 + 4 == 6 || 3 + 3 == 7;
+
+	echo $_xor;
+	echo "<br>";
+
+	//variable incrementing and decrementing
+
+	$num = 4; 
+	++$num;
+	--$num;
+	--$num;
+	echo $num;
 	echo "<br>";
 
 ?>
