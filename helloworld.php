@@ -70,4 +70,8 @@
 	echo "You have " . $msgs . " new messages.";
 	echo "<br>";
 
+	//string interpolation
+	echo 'You have $msgs new messages';
+	echo "You have $msgs new messages";
+
 ?>
