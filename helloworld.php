@@ -150,6 +150,24 @@
 
 	if ($month == "dec") {
 		echo "Christmas time is coming, this month";
+		echo "<br>";
 	}
+
+	//comparison operators
+
+	$q = 4;
+	$u = 4;
+	$s = 5;
+
+	if ($q <= $u) echo "$q is less than or equal to $u";
+	echo "<br>";
+	if ($q >= $u ) echo "$q is greater than or equal to $u";
+	echo "<br>";
+	if ($u < $s) echo "$u is less then $s";
+	echo "<br>";
+	if ($s > $u) echo "$s is greater than $u";
+	echo "<br>";
+	if ($q == $u) echo "$q is equivilant to $u";
+	echo "<br>";
 
 ?>
