@@ -127,4 +127,14 @@
 	echo helloworld(4);
 	echo "<br>";
 
+	//super global variables
+	$came_from = htmlentities($_SERVER['HTTP_REFERER']);
+	echo $came_from;
+	echo "<br>";
+
+	//expression
+	$exp = 5 + abs(3-8);
+	echo $exp;
+	echo "<br>";
+
 ?>
