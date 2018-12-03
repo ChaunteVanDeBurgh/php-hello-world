@@ -38,4 +38,25 @@
 
 	echo $names[0] . ' ' . $names[1] . ' ' . $names[2];
 
+	echo "<br>";
+
+	//passing values to a function by reference
+	$p1 = 'earth';
+	$p2 = 'mars';
+	$p3 = 'venus';
+
+	function format_name_thread(&$ap1, &$ap2, &$ap3)
+	{
+		$ap1 = ucfirst(strtolower($ap1));
+		$ap2 = ucfirst(strtolower($ap2));
+		$ap3 = ucfirst(strtolower($ap3));
+	}
+
+	echo $p1 . ' ' . $p2 . ' ' . $p3;
+	echo "<br>"; 
+
+	format_name_thread($p1, $p2, $p3);
+
+	echo "<br>";
+	echo $p1 . ' ' . $p2 . ' ' . $p3;
 ?>
