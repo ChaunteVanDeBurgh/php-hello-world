@@ -33,6 +33,12 @@
 	//constants
 	AlphaNum::encode();
 
+	//testing subscriber class inheritance
+	$object_6 = new Subscriber;
+	$object_6->email = "helloworldemail";
+	$object_6->phone = "6666666666";
+	$object_6->display();
+
 	class User {
 		public $name = "User";
 		public $password = "Password";
@@ -55,6 +61,20 @@
 
 		static function encode() {
 			echo self::A;
+			echo "<br>";
+		}
+	}
+
+	//using extends for class inheratence
+
+	class Subscriber extends User {
+		public $email, $phone;
+
+		function display(){
+			echo "Name: " . $this->name; echo "<br>";
+			echo "Password: " . $this->password; echo "<br>";
+			echo "Email: " . $this->email; echo "<br>";
+			echo "Phone: " . $this->phone; echo "<br>";
 		}
 	}
 ?>
