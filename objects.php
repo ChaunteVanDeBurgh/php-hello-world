@@ -23,6 +23,12 @@
 
 	// $this
 	echo $object_4->get_password();
+	echo "<br>";
+	
+	//implicit property decloration
+	$object_5 = new User;
+	$object_5->nickname = 'chaz';
+	print_r($object_5); echo "<br>";
 
 	class User {
 		public $name, $password;
