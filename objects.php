@@ -30,6 +30,9 @@
 	$object_5->nickname = 'chaz';
 	print_r($object_5); echo "<br>";
 
+	//constants
+	AlphaNum::encode();
+
 	class User {
 		public $name = "User";
 		public $password = "Password";
@@ -40,6 +43,18 @@
 
 		function get_password() {
 			return $this->password;
+		}
+	}
+
+	//constant's class
+
+	class AlphaNum {
+		const A = 1;
+		const B = 2;
+		const C = 3;
+
+		static function encode() {
+			echo self::A;
 		}
 	}
 ?>
