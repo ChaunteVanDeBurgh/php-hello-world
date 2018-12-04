@@ -42,4 +42,9 @@
 		echo "$item" . "<br>";
 	};
 
+	//for each with associative array
+	foreach($pages2 as $items => $values) {
+		echo "$items: $values.<br>";
+	};
+
 ?>
