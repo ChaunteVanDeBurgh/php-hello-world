@@ -23,4 +23,6 @@
 	$object_3->password = "Mozart";
 	print_r($object_3); echo "<br>";
 
+	$object->save_user();
+
 ?>
