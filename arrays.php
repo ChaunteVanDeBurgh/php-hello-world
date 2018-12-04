@@ -47,4 +47,9 @@
 		echo "$items: $values.<br>";
 	};
 
+	//looping an associative array with each //and list
+	while (list($item, $description) = each($paper))
+		echo "$item: $description<br>";
+
+
 ?>
