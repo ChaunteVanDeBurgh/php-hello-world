@@ -59,4 +59,22 @@
 
 	echo "<br>";
 	echo $p1 . ' ' . $p2 . ' ' . $p3;
+	echo "<br>";
+
+	//global variables
+	$g1 = 'house';
+	$g2 = 'car';
+	$g3 = 'gym';
+
+	function global_format() {
+		global $g1; $g1 = ucfirst(strtolower($g1));
+		global $g2; $g2 = ucfirst(strtolower($g2));
+		global $g3; $g3 = ucfirst(strtolower($g3));		
+	}
+
+	echo $g1 . ' ' . $g2 . ' ' . $g3;
+	echo '<br>';
+	echo global_format();
+	echo $g1 . ' ' . $g2 . ' ' . $g3;
+	echo '<br>';
 ?>
