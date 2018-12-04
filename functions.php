@@ -87,4 +87,6 @@
 		echo "function doesn't exist";
 	}
 
+	echo phpversion();
+
 ?>
