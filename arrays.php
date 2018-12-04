@@ -54,5 +54,30 @@
 	//list
 	list($a, $b) = array('Allice', 'Bob');
 	echo "a=$a b=$b";
+	echo "<br>";
+
+	//multi dementional arrays
+	$goals = array(
+		'music' => array(
+			'video' => 'jam-no-1',
+			'pictures' => 'guitar-pose'
+		),
+		'programming' => array(
+			'site1' => 'elementuse',
+			'site2' => 'chauntevan'
+		),
+		'hibatchi' => array(
+			'video1' => 'knife show',
+			'video2' => 'fork and spatula'
+		)
+	);
+
+	//foreach...as looping multidementional array
+
+	foreach($goals as $item => $goal_items) {
+		foreach($goal_items as $items => $description) {
+			echo "$description <br>";
+		};
+	};
 
 ?>
