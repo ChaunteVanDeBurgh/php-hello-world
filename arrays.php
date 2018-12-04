@@ -20,10 +20,14 @@
 	echo "<br>";
 
 	//array keyword
+		//numeric array
+
 	$pages = array('one', 'two', 'three', 'four');
 
 	echo $pages[1];
 	echo "<br>";
+
+	//associative array
 
 	$pages2 = array(
 		'printer' => "lazer",
@@ -32,5 +36,10 @@
 
 	echo $pages2['cat'];
 	echo "<br>";
+
+	//for each loop
+	foreach($pages as $item) {
+		echo "$item" . "<br>";
+	};
 
 ?>
