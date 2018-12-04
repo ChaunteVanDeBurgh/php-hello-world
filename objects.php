@@ -21,11 +21,18 @@
 	$object_4->password = "vivaldi";
 	print_r($object_4); echo "<br>";
 
+	// $this
+	echo $object_4->get_password();
+
 	class User {
 		public $name, $password;
 
 		function save_user() {
 			echo "Save User code goes here";
+		}
+
+		function get_password() {
+			return $this->password;
 		}
 	}
 ?>
