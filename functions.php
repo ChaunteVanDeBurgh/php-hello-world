@@ -77,4 +77,14 @@
 	echo global_format();
 	echo $g1 . ' ' . $g2 . ' ' . $g3;
 	echo '<br>';
+
+	//function exist
+
+	if (function_exists(global_format)){
+		echo "function exists";
+		echo "<br>";
+	} else {
+		echo "function doesn't exist";
+	}
+
 ?>
