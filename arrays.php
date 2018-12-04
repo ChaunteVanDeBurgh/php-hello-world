@@ -5,6 +5,7 @@
 	$paper[] = "Laser";
 	$paper[] = "Photo";
 
-	print_r($paper);
+	for ($i = 0; $i < 4; ++$i)
+		echo "$i: $paper[$i]" . "<br>";
 
 ?>
