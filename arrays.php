@@ -51,5 +51,8 @@
 	while (list($item, $description) = each($paper))
 		echo "$item: $description<br>";
 
+	//list
+	list($a, $b) = array('Allice', 'Bob');
+	echo "a=$a b=$b";
 
 ?>
