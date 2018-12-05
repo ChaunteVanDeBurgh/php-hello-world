@@ -104,5 +104,87 @@
 
 
 	echo "<pre>";
+	echo "<br>";
 
+	//built in array functions
+	//is_array()
+	echo (is_array($chessboard));
+	$var = "int-string";
+
+	echo "<br>";
+
+	echo (is_array($var)) ? "it is an array" : "its not an array";
+
+	echo "<br>";	
+
+	echo (is_array($chessboard)) ? "is an array" : "is not an array";
+
+	echo "<br>";
+	
+	//count()
+
+	echo count($chessboard);
+	echo "<br>";
+	echo count($chessboard, 1);
+	echo "<br>";
+
+	$numbers = array(1,4,3,5,2,6);
+	print_r($numbers);
+
+	//sort()
+
+	sort($numbers);
+	print_r($numbers);
+
+	//sort(' ', SORT_STRING)
+
+	$letters = array('c','b','a','d','e','f');
+
+	sort($letters, SORT_STRING);
+	print_r($letters);
+
+	//shuffle
+	shuffle($letters);
+	print_r($letters);
+
+	//reset
+	reset($letters); 
+	print_r($letters);
+
+
+	//explode()
+	$boom = explode(' ', "Hello, Wrold. My Name is Human");
+
+	print_r($boom);
+
+	echo "<br>";
+
+	//extract()
+	extract($printer);
+	echo $copier;
+
+	echo "<br>";
+
+	//ectract() with prefix
+
+	extract($printer, EXTR_PREFIX_ALL, 'fromprinter');
+	echo $fromprinter_copier;
+	echo "<br>";
+
+	//compact()
+	$fname         = "Doctor";
+  $sname         = "Who";
+  $planet        = "Gallifrey";
+  $system        = "Gridlock";
+  $constellation = "Kasterborous";
+
+  $contact = compact('fname', 'sname', 'planet', 'system', 'constellation');
+
+  print_r($contact);
+
+  //reset()
+  echo reset($letters);
+
+  //end()
+  echo end($letters);
 ?>
