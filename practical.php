@@ -78,4 +78,17 @@
 	//time functions
 	echo time();
 
+	echo "<br>";
+
+	echo date("d n y", time());
+
+	echo "<br>";
+
+  if (checkdate(04,06,1991)) echo "Date is valid";
+  else echo "Date is invalid";
+	echo "<br>";
+
+	if (file_exists("sandbox.php")) echo "file exists";
+
+
 ?>
