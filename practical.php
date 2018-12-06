@@ -88,7 +88,20 @@
   else echo "Date is invalid";
 	echo "<br>";
 
+	//file handling
+
 	if (file_exists("sandbox.php")) echo "file exists";
 
+	$made_file = fopen("madefile.txt", 'w') or die('did not create file');
+
+	$text = <<<__END
+	line 1
+	line 2
+	line 3
+__END;
+
+	fwrite($made_file, $text) or die("Could not write to file");
+	fclose($made_file);
+	echo "File 'madefile.txt' written successfully";
 
 ?>
