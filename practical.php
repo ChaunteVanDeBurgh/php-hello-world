@@ -91,6 +91,7 @@
 	//file handling
 
 	if (file_exists("sandbox.php")) echo "file exists";
+	echo "<br>";
 
 	$made_file = fopen("madefile.txt", 'w') or die('did not create file');
 
@@ -103,5 +104,13 @@ __END;
 	fwrite($made_file, $text) or die("Could not write to file");
 	fclose($made_file);
 	echo "File 'madefile.txt' written successfully";
+	echo "<br>";
+
+	//reading a file with fgets()
+	$madefile2 = fopen('madefile2.txt', 'r');
+	$line = fgets($madefile2);
+	fclose($madefile2);
+	echo $line;
+	echo "<br>";
 
 ?>
