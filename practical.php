@@ -119,5 +119,9 @@ __END;
 	fclose($made_file);
 	echo $text_1;
 
+	//copying a file
+	copy('madefile.txt', 'copyfile.txt') or die('could not copy file');
+	echo "file was coppied successfully";
+
 
 ?>
