@@ -96,9 +96,9 @@
 	$made_file = fopen("madefile.txt", 'w') or die('did not create file');
 
 	$text = <<<__END
-	line 1
-	line 2
-	line 3
+line 1
+line 2
+line 3
 __END;
 
 	fwrite($made_file, $text) or die("Could not write to file");
@@ -112,5 +112,12 @@ __END;
 	fclose($madefile2);
 	echo $line;
 	echo "<br>";
+
+	//reading file with fread()
+	$made_file = fopen("madefile.txt", "r");
+	$text_1 = fread($made_file, 3);
+	fclose($made_file);
+	echo $text_1;
+
 
 ?>
