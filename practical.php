@@ -166,7 +166,5 @@ __END;
 	echo "</pre>";
 	echo "<br>";
 
-	//fetcing a web page
-	echo file_get_contents('http://oreilly.com');
 
 ?>
