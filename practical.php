@@ -122,6 +122,11 @@ __END;
 	//copying a file
 	copy('madefile.txt', 'copyfile.txt') or die('could not copy file');
 	echo "file was coppied successfully";
+	echo "<br>";
 
+  //rename a mile
+	rename('madefile2.txt', 'madefile3.txt');
+	if (file_exists('madefile3.txt')) echo "successfully changed file name";
+	echo "<br>";
 
 ?>
