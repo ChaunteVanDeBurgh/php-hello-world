@@ -132,5 +132,16 @@ __END;
 	//delete file
 	if(!unlink('copyfile.txt')) echo "could not delet file";
 	else echo "file deleted";
+	echo "<br>";
+
+	//update a file with seek()
+	$fh = fopen("madefile.txt", 'r+') or die('Failed to open file');
+	$text = fgets($fh);
+
+	fseek($fh, 0, SEEK_END);
+	fwrite($fh, "$text") or die('Could not write to file');
+	fclose($fh);
+
+	echo "file successfully updated";
 
 ?>
