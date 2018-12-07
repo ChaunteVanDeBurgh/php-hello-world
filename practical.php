@@ -157,5 +157,13 @@ __END;
 
 	fclose($fh);
 	echo "File 'testfile.txt' successfully updated";
+	echo "<br>";
+
+	//reading whole files with file_get_contents()
+
+	echo "<pre>";
+	echo file_get_contents('madefile.txt');
+	echo "</pre>";
+	echo "<br>";
 
 ?>
