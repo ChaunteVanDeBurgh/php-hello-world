@@ -129,4 +129,8 @@ __END;
 	if (file_exists('madefile3.txt')) echo "successfully changed file name";
 	echo "<br>";
 
+	//delete file
+	if(!unlink('copyfile.txt')) echo "could not delet file";
+	else echo "file deleted";
+
 ?>
